@@ -7,7 +7,7 @@ on:
 
 jobs:
   jekyll:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: 📂 setup
         uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
-          enable_cache: true
+          enable_cache: false
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
