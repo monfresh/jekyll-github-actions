@@ -1,0 +1,3 @@
+brew "pandoc"
+tap "jez/formulae"
+brew "pandoc-sidenote"
